@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <Sider>
-      <Menu :theme="light" active-name="1">
+    <Sider :style="{background: '#fff'}">
+      <Menu :theme="light" width="auto" active-name="1">
         <MenuGroup title="家" Icon="md-home">
           <menu-item name="1" to="/live">
             <Icon type="md-people"/>
@@ -23,7 +23,7 @@
           </menu-item>
           <menu-item name="5">
             <Icon type="md-ribbon"/>
-            比赛
+            赛事
           </menu-item>
           <menu-item name="6">
             <Icon type="md-wine"/>
@@ -32,10 +32,6 @@
           <menu-item name="7">
             <Icon type="md-bonfire"/>
             探索
-          </menu-item>
-          <menu-item name="8">
-            <Icon type="md-nutrition"/>
-            采集
           </menu-item>
         </MenuGroup>
       </Menu>
