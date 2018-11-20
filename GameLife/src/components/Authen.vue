@@ -1,8 +1,12 @@
 <template>
   <Menu mode="horizontal" theme="light" active-name="1">
     <div class="layout-logo"></div>
-    <div class="layout-nav">
-    </div>
+    <div class="layout-nav"></div>
+    <div class="layout-login">
+      <router-link :to="{path: '/login'}">
+          登录
+      </router-link>
+  </div>
   </Menu>
 </template>
 
@@ -26,7 +30,10 @@ export default {
 
   .layout-nav {
     width: 420px;
-    margin: 0 auto;
     margin-right: 20px;
+  }
+  .layout-login {
+    width: 200px;
+    float: right;
   }
 </style>
