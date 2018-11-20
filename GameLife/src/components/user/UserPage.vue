@@ -3,17 +3,17 @@
     <Sider>
       <Menu :theme="light" active-name="1">
         <MenuGroup title="家">
-          <menu-item name="1">
+          <menu-item name="1" to="/lab">
             <Icon type="ios-paper"/>
-            厨房
+            实验室
           </menu-item>
-          <menu-item name="2">
+          <menu-item name="2" to="/live">
             <Icon type="ios-people"/>
-            客厅
+            起居室
           </menu-item>
           <menu-item name="3" to="/farm">
             <Icon type="ios-construct"/>
-            农场
+            培育室
           </menu-item>
         </MenuGroup>
         <MenuGroup title="外出">

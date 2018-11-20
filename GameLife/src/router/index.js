@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import UserPage from '@/components/user/UserPage'
 import AdminPage from '@/components/admin/AdminPage'
 import Farm from '@/components/user/Farm'
+import LivingRoom from '@/components/user/LivingRoom'
+import Lab from '@/components/user/Lab'
 
 Vue.use(Router)
 
@@ -17,6 +19,16 @@ export default new Router({
           path: '/farm',
           name: 'Farm',
           component: Farm
+        },
+        {
+          path: '/live',
+          name: 'LivingRoom',
+          component: LivingRoom
+        },
+        {
+          path: '/lab',
+          name: 'Lab',
+          component: Lab
         }
       ]
     },

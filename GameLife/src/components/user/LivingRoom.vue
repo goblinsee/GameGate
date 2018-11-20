@@ -1,12 +1,12 @@
 <template>
   <Card>
-    123
+    321
   </Card>
 </template>
 
 <script>
 export default {
-  name: 'Farm'
+  name: 'LivingRoom'
 }
 </script>
 
