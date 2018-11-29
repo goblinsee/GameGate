@@ -6,9 +6,9 @@
           <Icon type="md-people"/>
           仿真人信息
         </menu-item>
-        <menu-item name="2" to="/farm">
+        <menu-item name="2" to="/control">
           <Icon type="md-egg"/>
-          培育室
+          控制中心
         </menu-item>
         <menu-item name="3" to="/lab">
           <Icon type="md-beaker"/>

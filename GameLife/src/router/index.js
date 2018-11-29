@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import User from '@/components/user/User'
 import AdminPage from '@/components/admin/AdminPage'
-import Farm from '@/components/user/Farm'
+import Control from '@/components/user/Control'
 import LivingRoom from '@/components/user/LivingRoom'
 import Lab from '@/components/user/Lab'
 import Login from '@/components/Login'
@@ -18,9 +18,9 @@ export default new Router({
       redirect: '/live',
       children: [
         {
-          path: '/farm',
-          name: 'Farm',
-          component: Farm
+          path: '/control',
+          name: 'Control',
+          component: Control
         },
         {
           path: '/live',
