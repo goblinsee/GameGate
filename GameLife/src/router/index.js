@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import UserPage from '@/components/user/UserPage'
+import User from '@/components/user/User'
 import AdminPage from '@/components/admin/AdminPage'
 import Farm from '@/components/user/Farm'
 import LivingRoom from '@/components/user/LivingRoom'
@@ -13,8 +13,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'UserPage',
-      component: UserPage,
+      name: 'User',
+      component: User,
       redirect: '/live',
       children: [
         {

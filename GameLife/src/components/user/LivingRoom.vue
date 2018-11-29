@@ -2,8 +2,8 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <form>
-      <input type="text" name="username" v-model="username"> <br>
-      <input type="text" name="password" v-model="password"> <br>
+      如何称呼您？<input type="text" name="ownName" v-model="ownName"> <br>
+      您孩子的姓名？<input type="text" name="childName" v-model="childName"> <br>
       <a href="javascript:" @click="addUser">提交</a>
     </form>
   </div>

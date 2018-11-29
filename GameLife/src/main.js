@@ -9,8 +9,11 @@ import iView from 'iview'
 import VueResource from 'vue-resource'
 
 Vue.use(VueResource)
-Vue.use(iView)
 Vue.use(VueRouter)
+Vue.use(iView, {
+  transfer: true,
+  size: 'large'
+})
 Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
