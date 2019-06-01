@@ -1,10 +1,10 @@
 <template>
   <Card>
     <h2>仿生人管理</h2>
-    <Button>创建仿生人</Button>
+    <Button @click="add">创建仿生人</Button>
     <Button>改造仿生人</Button>
     <Transfer
-      v-if=false
+      v-if="on_add"
       :data="data3"
       :target-keys="targetKeys3"
       :list-style="listStyle"
@@ -24,6 +24,7 @@ export default {
   name: 'Control',
   data () {
     return {
+      on_add: false,
       data3: this.getMockData(),
       targetKeys3: this.getTargetKeys(),
       listStyle: {
@@ -33,6 +34,11 @@ export default {
     }
   },
   methods: {
+    add () {
+      if (this.on_add) {
+        this.on_add = false
+      } else this.on_add = true
+    },
     getMockData () {
       let mockData = []
       for (let i = 1; i <= 20; i++) {

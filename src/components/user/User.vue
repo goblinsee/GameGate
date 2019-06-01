@@ -14,11 +14,11 @@
           <Icon type="md-beaker"/>
           实验室
         </menu-item>
-        <menu-item name="4">
+        <menu-item name="4" disabled>
           <Icon type="md-list-box"/>
           计划
         </menu-item>
-        <menu-item name="5">
+        <menu-item name="5" disabled>
           <Icon type="md-basket"/>
           采购
         </menu-item>
